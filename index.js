@@ -103,17 +103,17 @@ document.addEventListener('keydown', function (e) {
 
     //tried to make character go diagonally because I thought it would be cool,
     //but since it's an extra part I'll leave it for now
-    if (e.key === 'ArrowUp' + 'ArrowRight') {
-        direction = 'east' + 'north'
+    if (e.key === 'ArrowUp' && 'ArrowRight') {
+        direction = 'northEast'
     }
-    if (e.key === 'ArrowUp' + 'ArrowLeft') {
-        direction = 'west' + 'north'
+    if (e.key === 'ArrowUp' && 'ArrowLeft') {
+        direction = 'northWest'
     }
-    if (e.key === 'ArrowDown' + 'ArrowRight') {
-        direction = 'south' + 'east'
+    if (e.key === 'ArrowDown' && 'ArrowRight') {
+        direction = 'southEast'
     }
-    if (e.key === 'ArrowDown' + 'ArrowLeft') {
-        direction = 'south' + 'west'
+    if (e.key === 'ArrowDown' && 'ArrowLeft') {
+        direction = 'southWest'
     }
 })
 
